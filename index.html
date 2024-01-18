@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvish Name Converter</title>
+</head>
+<body>
+    <h1>Elvish Name Converter</h1>
+    <form method="post" action="/">
+        <label for="first_name">Enter your first name:</label>
+        <input type="text" name="first_name" required>
+        <br>
+        <label for="last_name">Enter your last name:</label>
+        <input type="text" name="last_name" required>
+        <br>
+        <button type="submit">Convert to Elvish</button>
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
